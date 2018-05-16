@@ -31,8 +31,10 @@ ALLOWED_HOSTS = ['127.0.0.1', 'nati.pythonanywhere.com']
 # Application definition
 
 INSTALLED_APPS = [
-    'loc', 
+    'loc',
+    'widget_tweaks',
     'phonenumber_field',
+    'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
-
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
